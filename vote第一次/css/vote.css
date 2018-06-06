@@ -1,0 +1,159 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+html{
+	font-size: 16px;
+	height: 100%;
+}
+body{
+	width: 100%;
+	min-width: 870px;
+	height: 100%;
+	overflow-y: hidden;
+}
+
+header{
+	width: 100%;
+	height: 80px;
+	background: #7086FD;
+	color: #fff;
+}
+header h1{
+	float: left;
+	line-height: 80px;
+	margin-left: 2rem;
+}
+header label{
+	float: right;
+	line-height: 78px;
+	margin-right: 2rem;
+}
+header label span{
+	font-size: 1.5rem;
+	font-style: italic;
+	display: inline-block;
+	margin-right: 1rem;
+}
+.show_time{
+	width: 100%;
+	height: 50px;
+	box-shadow:0 3px 10px 5px #D4DBED;
+}
+.show_time .begin{
+	float: left;
+	width: 50%;
+}
+.show_time .begin .begin_r{
+	min-width: 250px;
+	float: right;
+	text-align:center;
+	line-height: 50px;
+	margin-right: 1rem;
+}
+.show_time .end{
+	float: right;
+	width: 50%;
+}
+.show_time .end .end_l{
+	min-width: 250px;
+	display: block;
+	float: left;
+	text-align: center;
+	line-height: 50px;
+	margin-left: 1rem;
+}
+.view_show{
+	width: 100%;
+}
+.view_show .index_one{
+	width: 86%;
+	height:8px;
+	margin:0 auto;
+	margin-top: 30px;
+	background: #E3E6EF;
+}
+.view_show .index_tow{
+	width: 88%;
+	height:8px;
+	margin:0 auto;
+	background: #D4DBED;
+}
+.view_show .index_three{
+	width: 90%;
+	height: 500px;
+	margin:0 auto;
+	box-shadow:0 3px 10px 5px #D4DBED;
+	display: flex;
+	justify-content:space-around;
+	position: relative;
+}
+.grid_center{
+	margin:0 auto;
+	position: relative;
+}
+/*柱形图*/
+.space{
+	width: 8%;
+	max-width: 85px;
+	font-size:1rem;
+	/*float: left;*/
+	position: absolute;
+	bottom:10px;
+}
+.space img{
+	width: 100%;
+}
+.NumberVotes{
+	text-align: center;
+}
+.viewVotes{
+	width: 100%;
+	height: 300px;
+	background: linear-gradient(#6BBAFF, #7889FE); /* 标准的语法 */
+	/*transition:height 1s linear;*/
+}
+.player_info{
+	width: 100%;
+	font-size:0.8rem;
+}
+.player_info .iam{
+	float: right;
+}
+.player_info .player_name{
+	text-align: center;
+}
+.begin_show_time,
+.end_show_time{
+	font:bold 16px Arial, Helvetica, sans-serif;
+}
+.num_one{
+	left: 2%;
+}
+.num_tow{
+	left: 12%;
+}
+.num_three{
+	left: 22%;
+}
+.num_four{
+	left: 32%;
+}
+.num_five{
+	left: 42%;
+}
+.num_six{
+	left: 52%;
+}
+.num_seven{
+	left: 62%;
+}
+.num_eight{
+	left: 72%;
+}
+.num_nine{
+	left: 82%;
+}
+.num_ten{
+	left: 92%;
+}

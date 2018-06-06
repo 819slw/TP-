@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>editor</title>
+		<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.css" />
+		<link rel="stylesheet" href="static/css/jquery.mCustomScrollbar.css" />
+		<!--<link rel="Stylesheet" type="text/css" href="static/css/jPicker.css">-->
+		<link rel="Stylesheet" type="text/css" href="static/css/jPicker-1.1.6.min.css">
+		<link rel="stylesheet" href="static/css/css.css" />
+		
+		<script type="text/javascript" src="static/js/jquery.js"></script>
+		<script src="static/js/jquery.mCustomScrollbar.js"></script>
+		<script type="text/javascript" src="static/js/jpicker-1.1.6.min.js"></script>
+		<script type="text/javascript" src="static/js/less.js"></script>
+		<script type="text/javascript" src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+		<script type="text/javascript" charset="utf-8" src="ueditor1_4_3_3-utf8-php/utf8-php/ueditor.config.js"></script>
+		<script type="text/javascript" charset="utf-8" src="ueditor1_4_3_3-utf8-php/utf8-php/ueditor.all.js"></script>
+		<script type="text/javascript" src="ueditor1_4_3_3-utf8-php/utf8-php/lang/zh-cn/zh-cn.js" ></script>
+		<script type="text/javascript" src="//cdn.staticfile.org/jquery.pjax/1.9.6/jquery.pjax.min.js"></script>
+	</head>
+	<body>
+		<div id="load_content"></div>
+		<header>
+				<img src="static/images/logo.png" class="logo" />
+				<a href="javascript:void(0);" class="logo-btn">登录/注册</a>				
+		</header>
+		<div id="container">
+			<div class="container-left">
+				<ul>
+					<li class="active"><a href="Editor.html"><span class="glyphicon glyphicon-edit nav-icon"></span>智能编辑器</a></li>
+					<li><a href="static/html/style.html"><span class="glyphicon glyphicon-gift nav-icon"></span>样式中心</a></li>
+					<li><a href="static/html/template.html"><span class="glyphicon glyphicon-file nav-icon"></span>模板中心</a></li>
+					<li><span class="glyphicon glyphicon-list-alt nav-icon"></span>我的文章</li>
+				</ul>
+			</div>
+			<div class="container-right">
+				<div class="container-right-l">
+					<div class="grid-top">
+						<a href="javascript:void(0);" class="active-r-l all-style">样式</a>
+						<a href="javascript:void(0);" class="all-template">模板</a>						
+					</div>
+				</div>
+				<div class="container-right-m">
+					<div class="style-top">
+						<p class="new-style active-green">最新样式</p>
+						<p class="Collection-style">收藏样式</p>
+					</div>
+					<div class="choose-kind">
+						<ul class="choose-kind-ul">
+							<li id="title" class="active-green">标题</li>
+							<li id="Article">正文</li>
+							<li id="img_text">图文</li>
+							<li id="guide_img">引导图</li>
+							<li id="bar_line">分割线</li>
+							<li id="col_flex">分栏布局</li>
+						</ul>
+						<div style="clear: both;"></div>
+						<div class="choose-title center-kind mCustomScrollbar" class="nice_scroll">
+							<ul class="mixitup-box"></ul>
+							<ul class="template-box"></ul>
+						</div>
+					</div>
+				</div>
+				<div class="container-right-r">
+					<div class="u-editor-box">
+						<div class="u-editor">
+						<ul class="bk-color">
+							<li id="btnSetColor">背景配色<span class="color-box"></span></li>
+							<li id="btnSetFontColor">文字配色<span class="color-font"></span></li>
+							<li class="color-full" flag="false"><p class="square-box"></p> 全文配色</li>
+						</ul>
+						<div class="color-choose" id="colorSelectorWrap">
+                            <ul class="color-btns clearfix">
+                                <li><i style="background-color:rgba(222,5,5,1);"></i></li>
+                                <li><i style="background-color:rgba(241,79,0,1);"></i></li>
+                                <li><i style="background-color:rgba(241,136,0,1);" class=""></i></li>
+                                <li><i style="background-color:rgba(250,214,16,1);"></i></li>
+                                <li><i style="background-color:rgba(212,239,30,1);"></i></li>
+                                <li><i style="background-color:rgba(147,225,45,1);"></i></li>
+                                <li><i style="background-color:rgba(50,222,37,1);"></i></li>
+                                <li><i style="background-color:rgba(32,202,96,1);"></i></li>
+                                <li><i style="background-color:rgba(32,202,136,1);"></i></li>
+                                <li><i style="background-color:rgba(38,208,170,1);"></i></li>
+                                <li><i style="background-color:rgba(43,205,217,1);"></i></li>
+                                <li><i style="background-color:rgba(48,190,225,1);"></i></li>
+                                <li><i style="background-color:rgba(48,152,225,1);"></i></li>
+                                <li><i style="background-color:rgba(48,85,225,1);" class=""></i></li>
+                                <li><i style="background-color:rgba(38,31,188,1);" class="active"></i></li>
+                                <li><i style="background-color:rgba(43,16,145,1);"></i></li>
+                                <li><i style="background-color:rgba(71,16,145,1);"></i></li>
+                                <li><i style="background-color:rgba(104,25,177,1);"></i></li>
+                                <li><i style="background-color:rgba(142,30,184,1);"></i></li>
+                                <li><i style="background-color:rgba(198,31,204,1);"></i></li>
+                                <li><i style="background-color:rgba(235,56,195,1);"></i></li>
+                                <li><i style="background-color:rgba(231,39,138,1);"></i></li>
+                                <li><i style="background-color:rgba(231,39,107,1);"></i></li>
+                                <li><i style="background-color:rgba(248,103,94,1);"></i></li>
+                                <li><i style="background-color:rgba(180,183,187,1);"></i></li>
+                                <li><i style="background-color:rgba(108,109,112,1);"></i></li>
+                                <li><i style="background-color:rgba(74,75,77,1);"></i></li>
+                                <li><i style="background-color:rgba(0,0,0,1);"></i></li>
+                                <li><div class="addColor">+</div></li>
+                            </ul>
+                            <div class="colorSelectorFooter">
+                                <a class="btnClose" id="btnCloseColorPicker">关闭</a>
+                                <div id="picker">
+                                	<div id="Inline"></div>
+                                </div>
+                             </div>
+                        </div>
+						<ul class="show-ipone">
+							<li data-toggle="tooltip" data-placement="top" title="在编辑器内使用Ctrl+A 全选后，再使用Ctrl+C复制。">复制方法</li>
+							<li>导入文章</li>
+							<li id="show-demonstration-btn" data-toggle="tooltip" data-placement="top" title="预览实际结果以手机为准">手机预览</li>
+							<li   data-toggle="tooltip" data-placement="top" title="编辑内容进行时时保存">时时同步</li>
+							<li id="btnClearEditor">清空</li>
+						</ul>
+						<script id="editor" name="editor" type="text/plain"  style="width:500px; height: calc(100vh - 190px); max-height: calc(100vh - 190px);"></script>
+					</div>
+					</div>
+				</div>
+				<div class="demonstration">
+					<div class="bg-preview">
+						<div class="bg-previe-content" id="wrapPreviewContent">
+						</div>
+						<a id="btnClosePreviewWrap" href="javascript:void(0);" class="pre-close"><i class="fa fa-times"></i> 关闭</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+        <script type="text/javascript" src="static/js/public.js" ></script>
+		<script type="text/javascript" src="static/js/editor.js" ></script>
+		<script type="text/javascript">
+			var objs={
+				url:{
+					initStyle:"static/lib/json/title.json"
+				}
+			}
+		</script>
+	</body>
+</html>

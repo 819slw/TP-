@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>vote</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=yes">
+    <meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/css.css">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.nicescroll.min.js"></script>
+	<script type="text/javascript" src="js/vote.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-3">
+        <div class="height_vh">
+        	<div class="grid_left">
+        		<p class="activity_name">活动活动活动Sad sad as das dsa da 活动</p>
+        		<ul class="Statistics">
+        			<li>
+        				<span>488</span><br>
+        				<span>参与选手</span><br>
+        			</li>
+        			<li>
+        				<span>999999</span><br>
+        				<span>累积票数</span><br>
+        			</li>
+        			<div style="clear: both;"></div>
+        		</ul>
+        		<div class="activity_role">
+        			<h3 class="center_f activity_role_word">活动规则</h3>
+        			<ul class="intro_role left_f">
+        				<li>
+        					<span>投票开始：<span class="begin_time_votes"></span>2018-1-29 00:00:00</span>
+        				</li>
+        				<li>
+        					<span>投票截止：<span class="begin_time_votes"></span>2018-2-30 00:00:00</span>
+        				</li>
+        				<li>
+        					<span class="left_f">投票规则:</span><br>
+        					<span>每个微信每天可以投3票，每天可为同一选手投3票</span>
+        				</li>
+        			</ul>
+        		</div>
+        		<div class="erweima">
+        			<img class="erweima_img" src="erweima.png">
+        			<b class="center_f erweima_word">微信扫描二维码参与投票</b>
+        		</div>
+        		<div class="Support_technology">
+        			本活动由 有投票 提供技术支持。
+        		</div>
+        	</div>
+        </div>
+    </div>
+    <div class="col-md-9">
+        <div class="right_vh">
+        	<div class="grid_right">
+        		<p class="W_800_f c_write vote_title">投票活动现场直播系统</p>
+        		<div class="warn_info">
+		    		<span class="glyphicon glyphicon-info-sign"></span> 本页面暂停所有相关活动
+		    	</div>
+        		<!--<div class="show_Player">
+                    <div class="container-fluid" id="add_code">
+                        <div class="row">
+                        </div>
+                    </div>                        
+        		</div>-->
+        	</div>
+    	</div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+    var config={
+        url:"js/vote.json",
+        col:3,
+        secound:10000
+    }
+</script>
+</body>
+</html>

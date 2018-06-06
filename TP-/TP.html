@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>TP+</title>
+		<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=no">
+		<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" />	
+		<link rel="stylesheet" href="css/TP.css" />
+	</head>
+	<body>
+	<div class="page-top"></div>
+		<nav>
+			<div class="nav-grid">
+				<img src="img/logo.png" class="logo"/>
+				<div class="write-info">
+					<a href="#" class="login">登录</a>
+					<a href="#" class="register">注册</a>
+				</div>
+				<ul class="nav-ul">
+					<li class="active-nav"><a href="TP.html">首页</a></li>
+					<li><a href="case.html">案例</a></li>
+					<li><a href="item.html">服务</a></li>
+					<li><a href="help.html">帮助</a></li>
+					<li><a href="about.html">关于</a></li>
+				</ul>
+			</div>
+		</nav>
+		<div class="banner" id="banner">
+		<!--<img src="img/banner.png" class="stripe"/>-->
+		<div class="page-block"></div>
+		<canvas id="canvas"></canvas>
+		<div class="banner-index">
+			<p class="banner-title text-center">做更专业、更走心的微信投票平台</p>
+			<p class="banner-ad text-center">
+				<span class="banner-ad-word">拓展优质客户</span>
+				<span class="banner-ad-word">增加知名度</span>
+				<span class="banner-ad-word">提高营业额</span>
+			</p>
+		</div>
+		</div>
+		<div class="build-user">
+			<a href="#" class="build-btn text-center">立即免费创建</a>
+			<div class="circular-in"></div>
+			<div class="circular-out"></div>
+			<img class="Triangle-img" src="img/Triangle.png" />
+		</div>
+		<div class="my-advantage">
+			<img src="img/position-tl.png" class="position-img-l"/>
+			<img src="img/position-tl.png" class="position-img-r"/>
+			<p class="title-content text-center">我们的优势</p>
+			<p class="bar"></p>
+			<div class="show-advantage">
+				<ul class="show-advantage-grid">
+					<li class="advantage-eg">
+						<div class="advantage-transform">
+							<div class="Positive">
+								<img src="img/advantage-1.png" class="advantage-eg-img" />
+								<p class="advantage-big text-center">BGP线路 极速体验</p>
+								<p class="advantage-small text-center">阿里云集群服务器保证活动稳定、流畅运行</p>
+							</div>
+							<div class="side">
+								<p class="side-t">BGP线路极速体验</p>
+								<p class="side-m">阿里云集群服务器保证活动稳定、流畅运行阿里云集群服务器保证活动稳定、流畅运行</p>
+								<p class="side-b">阿里云集群服务器保证活动稳定、流畅运行阿里云集群服务器保证活动稳定、流畅运行</p>
+							</div>
+						</div>
+					</li>
+					<li class="advantage-eg">
+						<div class="advantage-transform">
+							<div class="Positive">
+								<img src="img/advantage-2.png" class="advantage-eg-img" />
+								<p class="advantage-big text-center">BGP线路 极速体验</p>
+								<p class="advantage-small text-center">阿里云集群服务器保证活动稳定、流畅运行</p>
+							</div>
+							<div class="side">
+								<p class="side-t">BGP线路极速体验</p>
+								<p class="side-m">阿里云集群服务器保证活动稳定、流畅运行阿里云集群服务器保证活动稳定、流畅运行</p>
+								<p class="side-b">阿里云集群服务器保证活动稳定、流畅运行阿里云集群服务器保证活动稳定、流畅运行</p>
+							</div>
+						</div>
+					</li>
+					<li class="advantage-eg">
+						<div class="advantage-transform">
+							<div class="Positive">
+								<img src="img/advantage-3.png" class="advantage-eg-img" />
+								<p class="advantage-big text-center">BGP线路 极速体验</p>
+								<p class="advantage-small text-center">阿里云集群服务器保证活动稳定、流畅运行</p>
+							</div>
+							<div class="side">
+								<p class="side-t">BGP线路极速体验</p>
+								<p class="side-m">阿里云集群服务器保证活动稳定、流畅运行阿里云集群服务器保证活动稳定、流畅运行</p>
+								<p class="side-b">阿里云集群服务器保证活动稳定、流畅运行阿里云集群服务器保证活动稳定、流畅运行</p>
+							</div>
+						</div>
+					</li>
+					<li class="advantage-eg">
+						<div class="advantage-transform">
+							<div class="Positive">
+								<img src="img/advantage-4.png" class="advantage-eg-img" />
+								<p class="advantage-big text-center">BGP线路 极速体验</p>
+								<p class="advantage-small text-center">阿里云集群服务器保证活动稳定、流畅运行</p>
+							</div>
+							<div class="side">
+								<p class="side-t">BGP线路极速体验</p>
+								<p class="side-m">阿里云集群服务器保证活动稳定、流畅运行阿里云集群服务器保证活动稳定、流畅运行</p>
+								<p class="side-b">阿里云集群服务器保证活动稳定、流畅运行阿里云集群服务器保证活动稳定、流畅运行</p>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="service">
+			<p class="title-content text-center">实用功能</p>
+			<p class="bar"></p>
+			<div class="service-content">
+				<ul class=" service-ul">
+					<li class=" service-li">
+						<div class="service-li-l">1</div>
+						<div class="service-li-r">
+							<p class="service-li-rt">背景音乐</p>
+							<p class="service-li-rb">全网首家实现切换背景音乐不会中断的投票系统</p>
+						</div>
+					</li>
+					<li class=" service-li">
+						<div class="service-li-l">2</div>
+						<div class="service-li-r">
+							<p class="service-li-rt">页面漂浮物</p>
+							<p class="service-li-rb">全网首家实现切换背景音乐不会中断的投票系统</p>
+						</div>
+					</li>
+					<li class=" service-li">
+						<div class="service-li-l">3</div>
+						<div class="service-li-r">
+							<p class="service-li-rt">页面漂浮物</p>
+							<p class="service-li-rb">全网首家实现切换背景音乐不会中断的投票系统</p>
+						</div>
+					</li>
+					<li class=" service-li">
+						<div class="service-li-l">4</div>
+						<div class="service-li-r">
+							<p class="service-li-rt">背景音乐</p>
+							<p class="service-li-rb">全网首家实现切换背景音乐不会中断的投票系统</p>
+						</div>
+					</li>
+					<li class=" service-li">
+						<div class="service-li-l">5</div>
+						<div class="service-li-r">
+							<p class="service-li-rt">快速导航按钮</p>
+							<p class="service-li-rb">快速实现页面切换</p>
+						</div>
+					</li>
+					<li class=" service-li">
+						<div class="service-li-l">6</div>
+						<div class="service-li-r">
+							<p class="service-li-rt">快速导航按钮</p>
+							<p class="service-li-rb">快速实现页面切换</p>
+						</div>
+					</li>
+					<li class=" service-li">
+						<div class="service-li-l">7</div>
+						<div class="service-li-r">
+							<p class="service-li-rt">在线自动报名</p>
+							<p class="service-li-rb">用户实时自助报名，支持自定义字段</p>
+						</div>
+					</li>
+					<li class=" service-li">
+						<div class="service-li-l">8</div>
+						<div class="service-li-r">
+							<p class="service-li-rt">数据实时显示</p>
+							<p class="service-li-rb">实时显示投票数量和访问量一目了然</p>
+						</div>
+					</li>
+					<li class=" service-li">
+						<div class="service-li-l">9</div>
+						<div class="service-li-r">
+							<p class="service-li-rt">数据实时显示</p>
+							<p class="service-li-rb">实时显示投票数量和访问量一目了然</p>
+						</div>
+					</li>
+				</ul>
+				<div style="clear: both;"></div>
+			</div>
+		</div>
+		<div class="user-choose">
+		<img src="img/position-tl.png" class="position-img-l"/>
+		<img src="img/position-tl.png" class="position-img-r"/>
+			<p class="title-content text-center">他们也在用</p>
+			<p class="text-center small-title">国内领先的服务业商城产品，全方位支持服务业商家做好服务</p>
+			<p class="bar"></p>
+			<div class="choose-content">
+				<ul class="choose-ul">
+					<li class="choose-odd">
+						<img src="img/images/TP+09.png" class="choose-obj" />
+					</li>
+					<li class="">
+						<img src="img/images/TP+10.png" class="choose-obj" />
+					</li>
+					<li class="choose-odd">
+						<img src="img/images/TP+11.png" class="choose-obj" />
+					</li>
+					<li class="">
+						<img src="img/images/TP+12.png" class="choose-obj" />
+					</li>
+					<li class="choose-odd">
+						<img src="img/images/TP+13.png" class="choose-obj" />
+					</li>
+					<li class="">
+						<img src="img/images/TP+16.png" class="choose-obj" />
+					</li>
+					<li class="choose-odd">
+						<img src="img/images/TP+17.png" class="choose-obj" />
+					</li>
+					<li class="">
+						<img src="img/images/TP+18.png" class="choose-obj" />
+					</li>
+					<li class="choose-odd">
+						<img src="img/images/TP+19.png" class="choose-obj" />
+					</li>
+					<li class="">
+						<img src="img/images/TP+20.png" class="choose-obj" />
+					</li>
+					<li class="choose-odd">
+						<img src="img/images/TP+23.png" class="choose-obj" />
+					</li>
+					<li class="">
+						<img src="img/images/TP+24.png" class="choose-obj" />
+					</li>
+					<li class="choose-odd">
+						<img src="img/images/TP+25.png" class="choose-obj" />
+					</li>
+					<li class="">
+						<img src="img/images/TP+26.png" class="choose-obj" />
+					</li>
+					<li class="choose-odd">
+						<img src="img/images/TP+27.png" class="choose-obj" />
+					</li>
+				</ul>
+				<div style="clear: both;"></div>
+			</div>
+		</div>
+		<div class="good-exmple">
+			<p class="title-content text-center">精彩案例</p>
+			<p class="bar"></p>
+			<ul class="exmple-ul">
+			<li class="more"><a href="#">MORE+</a></li>
+				<li class="exmple-li">
+					<a href="">
+						<img src="img/exmple.jpg" class="exmple-img" />
+						<div class="exmple-li-content">
+							<p class="exmple-title">撒打算打算打算打算打算阿打算打算打打啊</p>
+							<div class="exmple-li-b">
+								<div class="exmple-li-bl">
+									<p>1234568</p>
+									<p>总票数</p>
+								</div>
+								<div class="exmple-li-bm">
+									<p>1234568</p>
+									<p>选手</p>
+								</div>
+								<div class="exmple-li-br">
+									<p>1234568</p>
+									<p>访问量</p>
+								</div>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="exmple-li">
+					<a href="">
+						<img src="img/exmple.jpg" class="exmple-img" />
+						<div class="exmple-li-content">
+							<p class="exmple-title">撒打算打算打算打算打算阿打算打算打打啊</p>
+							<div class="exmple-li-b">
+								<div class="exmple-li-bl">
+									<p>1234568</p>
+									<p>总票数</p>
+								</div>
+								<div class="exmple-li-bm">
+									<p>1234568</p>
+									<p>选手</p>
+								</div>
+								<div class="exmple-li-br">
+									<p>1234568</p>
+									<p>访问量</p>
+								</div>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="exmple-li">
+					<a href="">
+						<img src="img/exmple.jpg" class="exmple-img" />
+						<div class="exmple-li-content">
+							<p class="exmple-title">撒打算打算打算打算打算阿打算打算打打啊</p>
+							<div class="exmple-li-b">
+								<div class="exmple-li-bl">
+									<p>1234568</p>
+									<p>总票数</p>
+								</div>
+								<div class="exmple-li-bm">
+									<p>1234568</p>
+									<p>选手</p>
+								</div>
+								<div class="exmple-li-br">
+									<p>1234568</p>
+									<p>访问量</p>
+								</div>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="exmple-li">
+					<a href="">
+						<img src="img/exmple.jpg" class="exmple-img" />
+						<div class="exmple-li-content">
+							<p class="exmple-title">撒打算打算打算打算打算阿打算打算打打啊</p>
+							<div class="exmple-li-b">
+								<div class="exmple-li-bl">
+									<p>1234568</p>
+									<p>总票数</p>
+								</div>
+								<div class="exmple-li-bm">
+									<p>1234568</p>
+									<p>选手</p>
+								</div>
+								<div class="exmple-li-br">
+									<p>1234568</p>
+									<p>访问量</p>
+								</div>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="exmple-li">
+					<a href="">
+						<img src="img/exmple.jpg" class="exmple-img" />
+						<div class="exmple-li-content">
+							<p class="exmple-title">撒打算打算打算打算打算阿打算打算打打啊</p>
+							<div class="exmple-li-b">
+								<div class="exmple-li-bl">
+									<p>1234568</p>
+									<p>总票数</p>
+								</div>
+								<div class="exmple-li-bm">
+									<p>1234568</p>
+									<p>选手</p>
+								</div>
+								<div class="exmple-li-br">
+									<p>1234568</p>
+									<p>访问量</p>
+								</div>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="exmple-li">
+					<a href="">
+						<img src="img/exmple.jpg" class="exmple-img" />
+						<div class="exmple-li-content">
+							<p class="exmple-title">撒打算打算打算打算打算阿打算打算打打啊</p>
+							<div class="exmple-li-b">
+								<div class="exmple-li-bl">
+									<p>1234568</p>
+									<p>总票数</p>
+								</div>
+								<div class="exmple-li-bm">
+									<p>1234568</p>
+									<p>选手</p>
+								</div>
+								<div class="exmple-li-br">
+									<p>1234568</p>
+									<p>访问量</p>
+								</div>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="exmple-li">
+					<a href="">
+						<img src="img/exmple.jpg" class="exmple-img" />
+						<div class="exmple-li-content">
+							<p class="exmple-title">撒打算打算打算打算打算阿打算打算打打啊</p>
+							<div class="exmple-li-b">
+								<div class="exmple-li-bl">
+									<p>1234568</p>
+									<p>总票数</p>
+								</div>
+								<div class="exmple-li-bm">
+									<p>1234568</p>
+									<p>选手</p>
+								</div>
+								<div class="exmple-li-br">
+									<p>1234568</p>
+									<p>访问量</p>
+								</div>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="exmple-li">
+					<a href="">
+						<img src="img/exmple.jpg" class="exmple-img" />
+						<div class="exmple-li-content">
+							<p class="exmple-title">撒打算打算打算打算打算阿打算打算打打啊</p>
+							<div class="exmple-li-b">
+								<div class="exmple-li-bl">
+									<p>1234568</p>
+									<p>总票数</p>
+								</div>
+								<div class="exmple-li-bm">
+									<p>1234568</p>
+									<p>选手</p>
+								</div>
+								<div class="exmple-li-br">
+									<p>1234568</p>
+									<p>访问量</p>
+								</div>
+							</div>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="platform-info">
+			<p class="title-content text-center">平台公告</p>
+			<p class="bar"></p>
+			<div class="platform-content">
+				<div class="platform-l">
+				<div class="platform-title-g">
+					<p class="platform-l-title">最新动态</p>
+					<a href="#" class="right">MORE+</a>
+					<div style="clear: both;"></div>
+				</div>
+					<ul class="platform-l-content">
+						<li><a href="">[18-03-7] 有投票全体工作人员给您拜年啦！附2018年春节假期安排</a></li>
+						<li><a href="">[18-03-7] 有投票全体工作人员给您拜年啦！附2018年春节假期安排</a></li>
+						<li><a href="">[18-03-7] 有投票全体工作人员给您拜年啦！附2018年春节假期安排</a></li>
+						<li><a href="">[18-03-7] 有投票全体工作人员给您拜年啦！附2018年春节假期安排</a></li>
+						<li><a href="">[18-03-7] 有投票全体工作人员给您拜年啦！附2018年春节假期安排</a></li>
+						<li><a href="">[18-03-7] 有投票全体工作人员给您拜年啦！附2018年春节假期安排</a></li>
+					</ul>
+				</div>
+				<div class="platform-r">
+					<div class="platform-title-g">
+						<p class="platform-l-title">最新动态</p>
+						<a href="#" class="right">MORE+</a>
+						<div style="clear: both;"></div>
+					</div>
+					<ul class="platform-l-content">
+						<li><a href="">将投票活动关联到公众号，让你的公众号“热”起来</a></li>
+						<li><a href="">将投票活动关联到公众号，让你的公众号“热”起来</a></li>
+						<li><a href="">将投票活动关联到公众号，让你的公众号“热”起来</a></li>
+						<li><a href="">将投票活动关联到公众号，让你的公众号“热”起来</a></li>
+						<li><a href="">将投票活动关联到公众号，让你的公众号“热”起来</a></li>
+						<li><a href="">将投票活动关联到公众号，让你的公众号“热”起来</a></li>
+					</ul>
+				</div>
+				<div style="clear: both;"></div>
+			</div>
+		</div>
+		<footer>
+			@2017 YouTouPiao.Com AllRights Reserved.陕ICP备17015469号-1 Ser.1
+		</footer>
+		<div class="cndns-right">
+			<div class="cndns-right-meau meau-sev">
+				<a href="javascript:" class="cndns-right-btn">
+					<p>
+						常见<br>
+						问题
+					</p>
+				</a>
+				<div class="cndns-right-box">
+					<div class="box-border">
+						<div class="sev-t">
+							<p>
+								<a href="http://www.youtoupiao.com/article/questions.html">常见问题</a>
+							</p>
+							<div class="clear"></div>
+						</div>
+						<div class="sev-b">
+							<p><a href="http://www.youtoupiao.com/article/detail/id/85402bb9.html">1. 免费创建投票活动图文教程</a></p>
+							<p><a href="http://www.youtoupiao.com/article/detail/id/e7612e68.html">2. 如何创建一场自助报名的投票活动</a></p>
+							<p><a href="http://www.youtoupiao.com/article/detail/id/3ba587c3.html">3. 如何举办关注公众号再投票的活动</a></p>
+							<p><a href="http://www.youtoupiao.com/article/detail/id/6c39d5cb.html">4. 如何选择一个靠谱的第三方微信投票平台系统?</a></p>
+							<p><a href="http://www.youtoupiao.com/article/detail/id/5ec90b59.html">5. 免费创建投票活动视频教程</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="cndns-right-meau meau-contact">
+				<a href="javascript:" class="cndns-right-btn">
+					<p>
+						联系<br>
+						客服
+					</p>
+				</a>
+				<div class="cndns-right-box">
+					<div class="box-border">
+						<div class="sev-t">
+							<p>联系客服<i>服务时间：9:00-24:00</i></p>
+							<div class="clear"></div>
+						</div>
+						<div class="sev-b">
+							<ul id="zixunUl">
+								<li>
+									<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=2741707710&amp;site=qq&amp;menu=yes">
+										<img src="img/qq.png" alt="">
+										客服-多多
+									</a>
+								</li>
+								<li>
+									<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=3497618072&amp;site=qq&amp;menu=yes">
+										<img src="img/qq.png" alt="">
+										客服-橙月
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="cndns-right-meau meau-code">
+				<a href="javascript:" class="cndns-right-btn">
+					<p>
+						微信<br>
+						咨询
+					</p>
+				</a>
+				<div class="cndns-right-box">
+					<div class="box-border">
+						<div class="sev-t">
+							<p>微信咨询</p>
+							<img src="img/weixin.png">
+							<i>微信扫码咨询</i>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="cndns-right-meau meau-top" id="top-back" style="display: none;">
+				<a href="javascript:" class="cndns-right-btn" onclick="topBack()">
+					<i class="glyphicon glyphicon-chevron-up"></i>
+					<i>TOP</i>
+				</a>
+			</div>
+		</div>
+		<script type="text/javascript" src="http://lib.baomitu.com/jquery/1.12.4/jquery.min.js"></script>
+		<script type="text/javascript" src="js/TP.js"></script>
+		<script type="text/javascript">
+		</script>
+	</body>
+</html>

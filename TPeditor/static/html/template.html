@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>editor</title>
+		<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.css" />
+		<link rel="stylesheet" href="../css/jquery.mCustomScrollbar.css" />
+		<link rel="Stylesheet" type="text/css" href="../css/jPicker.css">
+		<link rel="Stylesheet" type="text/css" href="../css/jPicker-1.1.6.min.css">
+		<link rel="stylesheet" href="../css/css.css" />
+		
+		<script type="text/javascript" src="../js/jquery.js"></script>
+		<script src="../js/jquery.mCustomScrollbar.js"></script>
+		<script type="text/javascript" src="../js/jpicker-1.1.6.min.js" ></script>
+		<script type="text/javascript" src="../js/less.js" ></script>
+		<script type="text/javascript" src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+		<script type="text/javascript" src="//cdn.staticfile.org/jquery.pjax/1.9.6/jquery.pjax.min.js"></script>
+		<script type="text/javascript" src="http://jq22.qiniudn.com/masonry-docs.min.js"></script>
+	</head>
+	<body>
+		<div id="load_content"></div>
+		<header>
+				<img src="../images/logo.png" class="logo" />
+				<a href="javascript:void(0);" class="logo-btn">登录/注册</a>				
+		</header>
+		<div id="container">
+			<div class="container-left">
+				<ul class="choose-style-kind">
+					<li><a href="../../Editor.html"><span class="glyphicon glyphicon-edit nav-icon"></span>智能编辑器</a></li>
+					<li><a href="style.html"><span class="glyphicon glyphicon-gift nav-icon"></span>样式中心</a></li>
+					<li class="active"><a href="template.html"><span class="glyphicon glyphicon-file nav-icon"></span>模板中心</a></li>
+					<li><span class="glyphicon glyphicon-list-alt nav-icon"></span>我的文章</li>
+				</ul>
+			</div>
+			<div class="container-right">
+				<div id="style_page">
+					<div class="choose-style-top">
+						<div class="all-choose">
+							<p class="all-choose-template-input choose-active">√</p>
+							<p class="control-checkbox-label">全选标签</p>
+						</div>
+						<ul class="choose-template-kind">
+							<li class="choose-active">美文</li>
+							<li class="choose-active">美食</li>
+						</ul>
+		           </div>
+		            	<div class="container-fluid">
+						  <div class="row" id="masonry"></div>
+						</div>
+
+	            </div>
+
+				<script type="text/javascript">
+					$(function(){
+						initTemplatePage("../lib/json/allTemplate.json");
+					});
+				</script>			
+			</div>
+		</div>
+		<div id="drap">
+			<div class="drap-content">
+			</div>
+			<div class="btn-drap">
+				<button class="adopt-btn">立即使用</button>
+				<button class="collection-btn">取消收藏</button>
+			</div>
+		</div>
+		<script type="text/javascript" src="../js/public.js" ></script>
+		<script type="text/javascript" src="../js/style.js"></script>
+	</body>
+</html>
